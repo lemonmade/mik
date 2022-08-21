@@ -1,0 +1,37 @@
+<html>
+  <head><style>
+    p {
+      font-size: 45px;
+      font-family: 'Calibri'
+    }
+    .perrytheplatypus {
+      background-color:#c286ea;
+    }
+    img{
+      animation-name: slidein;
+      animation-duration: 4s;
+    } 
+    @keyframes slidein {
+      from {
+        transform: translateX (100%)} 
+      to 
+      {transform: translateX(0)}
+    }
+  
+  </style></head>
+  <body>
+    <p> Hello this is my first webpage :) </p>
+    <button>Purple party generator</button> 
+    <img src = "giphy.gif" alt = "Running cat with taco on back"/>
+    <script>
+      const button = document.querySelector ('button');
+      button.style.fontSize = '45px';
+      button.style.fontFamily = 'Calibri';
+      button.style.backgroundColor = '#7bfafd';
+      button.addEventListener ('click', () => {
+        const body = document.querySelector ('body')
+        body.classList.toggle ('perrytheplatypus')
+      })
+    </script>
+  </body>
+</html>
